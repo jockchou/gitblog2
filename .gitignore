@@ -1,0 +1,6 @@
+!.gitignore
+/vendor/*
+/.idea/*
+/var/cache/*
+/var/logs/*
+
