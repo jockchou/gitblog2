@@ -19,7 +19,7 @@ class Home
      */
     public function index(Request $request, Application $app)
     {
-        $all = $app['markdown']->getAll();
+        $all = $app['markdown']->getArticleAll();
 
         return $app['twig']->render('index.html', array());
     }
