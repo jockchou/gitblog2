@@ -18,8 +18,18 @@ class MarkdownAccessService
         $this->content = $content;
     }
 
-    public function getAll()
+    public function getArticleAll()
     {
         return $this->content->toArray();
+    }
+
+    public function getArticleByCategory($category)
+    {
+
+    }
+
+    public function getArticleByDate()
+    {
+        
     }
 }
