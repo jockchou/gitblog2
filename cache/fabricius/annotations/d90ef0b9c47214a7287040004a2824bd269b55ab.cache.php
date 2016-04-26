@@ -1,1 +1,0 @@
-<?php return unserialize('a:1:{i:0;O:32:"Fabricius\\Annotation\\ContentItem":1:{s:15:"repositoryClass";s:31:"Fabricius\\Repository\\Repository";}}');
