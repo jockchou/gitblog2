@@ -25,9 +25,9 @@ class MarkdownAccessServiceProvider implements ServiceProviderInterface
     public function register(Application $app)
     {
         $app['markdown'] = $app->share(function ($app) {
-            $content = $app['fabricius']->getRepository($app['fabricius.class'])->query();
+            $repository = $app['fabricius']->getRepository($app['fabricius.class']);
 
-            return new MarkdownAccessService($content);
+            return new MarkdownAccessService($repository);
         });
     }
 

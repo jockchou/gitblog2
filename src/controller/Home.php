@@ -19,7 +19,9 @@ class Home
      */
     public function index(Request $request, Application $app)
     {
-        $all = $app['markdown']->getArticleAll();
+        $all = $app['markdown']->getArticleByCategory('dummy');
+        $allCategory = $app['markdown']->getCategoryAll();
+        var_dump($allCategory);
 
         return $app['twig']->render('index.html', array());
     }
